@@ -29,6 +29,16 @@ public class StationNodeUtil {
 	}
 	
 	/**
+	 * Returns the StationNode for the given StationCode
+	 * @param code
+	 * @return
+	 */
+	public static StationNode getStationNode(StationCode code)
+	{
+		return stationGraph.get(code);
+	}
+	
+	/**
 	 * Get the whole StationNode Graph
 	 */
 	public static HashMap<StationCode,StationNode> getStationGraph()
